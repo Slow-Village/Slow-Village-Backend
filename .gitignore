@@ -108,7 +108,9 @@ fabric.properties
 .history
 .ionide
 
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,pycharm+all
+
 **/__pycache__
 .env
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,pycharm+all
+data/
