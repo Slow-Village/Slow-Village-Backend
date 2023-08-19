@@ -1,12 +1,11 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
 from fastapi import FastAPI
 
+from api import user_router
+
 app = FastAPI()
+
+app.include_router(user_router, prefix="/user")
+
 
 @app.get("/")
 async def root():
